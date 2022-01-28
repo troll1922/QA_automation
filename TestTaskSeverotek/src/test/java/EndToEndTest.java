@@ -1,8 +1,8 @@
-import Pages.*;
+import Base.*;
+import Base.Pages.*;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class EndToEndTest {
@@ -21,8 +21,27 @@ public class EndToEndTest {
         Assert.assertEquals(AddEntryPage.getFormH1(), Data.entryFormH1);
         AddEntryPage.setFormAll();
         AddEntryPage.saveEntry();
-
+        //Common.driver.get(Data.Url.BLOG_PAGE);
         Thread.sleep(3000);
+        //BlogPage.getFormTitle();
+        //BlogPage.getFormTextMarkdown();
+        //Assert.assertEquals(BlogPage.getFormTitle(), Data.formTitle);
+        //Assert.assertEquals(BlogPage.getFormTextMarkdown(), Data.formTextMarkdown);
+    }
+
+
+    @Test
+    public void test () throws InterruptedException {
+        Common.driver.navigate().to(Data.Url.BLOG_PAGE);
+        Thread.sleep(15000);
+        Assert.assertEquals(BlogPage.getFormTitle(), Data.formTitle);
+        Assert.assertEquals(BlogPage.getFormTextMarkdown(), Data.formTextMarkdown);
+        Common.driver.navigate().back();
+        EntriesPage.clickCheckBoxEntry();
+
+
+        Thread.sleep(10000);
+
     }
 
     @AfterClass
