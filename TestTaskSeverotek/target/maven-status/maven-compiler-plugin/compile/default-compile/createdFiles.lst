@@ -5,7 +5,7 @@ Base\Constants.class
 Base\Pages\LoginPage.class
 Base\Pages\AddEntryPage.class
 Base\Data.class
+Base\Pages\EntriesPage.class
 Base\Common.class
 Base\Data$Url.class
 Base\Pages\AdminPanelPage.class
-Base\Pages\EntriesPage.class
