@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test name="TestTaskSeverotek">
         <classes>
-            <class name="EndToEndTest"/>
+            <class name="tests.EndToEndTest"/>
         </classes>
     </test>
 </suite>

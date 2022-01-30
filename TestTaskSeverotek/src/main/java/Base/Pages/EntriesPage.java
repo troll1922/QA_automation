@@ -18,14 +18,29 @@ public class EntriesPage {
     protected static List<WebElement> listEntry = Common.driver.findElements(By.cssSelector(".row1"));
     protected static WebElement option = Common.driver.findElement(By.cssSelector("[name='action']"));
     protected static WebElement deleteButton = Common.driver.findElement(By.cssSelector(".button[name='index']"));
+    protected static String linkEntry;
 
     public static void clickCheckBoxEntry () {
         for (WebElement entry : listEntry) {
             if (entry.getText().contains(Data.formTitle)) {
+                linkEntry = entry.findElement(By.tagName("a")).getAttribute("href");
                 entry.findElement(By.name("_selected_action")).click();
                 break;
             }
         }
+    }
+
+    public static boolean isLinkEntry () {
+        for (WebElement entry : listEntry) {
+            if ((entry.getText().contains(Data.formTitle)) &&
+                    linkEntry.equalsIgnoreCase(entry.findElement(By.tagName("a")).getAttribute("href"))) {
+                System.out.println(true);
+                return true;
+            }
+        }
+        System.out.println(false);
+        return false;
+
     }
 
     public static void chooseDeleteOption () {
@@ -48,4 +63,6 @@ public class EntriesPage {
         clickButtonDelete();
         clickConfirmButton();
     }
+
+
 }

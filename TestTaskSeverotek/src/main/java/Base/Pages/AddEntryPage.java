@@ -2,6 +2,7 @@ package Base.Pages;
 
 import Base.Common;
 import Base.Data;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -34,10 +35,12 @@ public class AddEntryPage {
         formText.sendKeys(Data.formText);
     }
 
+    @Step ("Сохраняем введенные данные")
     public static void saveEntry () {
         formSave.click();
     }
 
+    @Step ("Заполняем поля в разделе blog/entry/add/")
     public static void setFormAll () {
         setFormTitle();
         setFormSlug();
