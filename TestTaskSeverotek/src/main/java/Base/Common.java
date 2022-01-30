@@ -3,7 +3,9 @@ package Base;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -20,6 +22,10 @@ public class Common {
             } else if (Config.browserName.equalsIgnoreCase(Constants.firefox)) {
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
+            }
+               else if (Config.browserName.equalsIgnoreCase(Constants.edge)) {
+                    WebDriverManager.edgedriver().setup();
+                    driver = new EdgeDriver();
             } else System.out.println("Incorrect Browser name or platform");
             driver.manage().deleteAllCookies();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Config.implicitlyTime));
