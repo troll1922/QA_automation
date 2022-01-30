@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-30T16:18:33 MSK" name="All Test Suite" finished-at="2022-01-30T16:18:42 MSK" duration-ms="9570">
+  <suite started-at="2022-01-30T18:29:30 MSK" name="All Test Suite" finished-at="2022-01-30T18:29:39 MSK" duration-ms="8475">
     <groups>
     </groups>
-    <test started-at="2022-01-30T16:18:33 MSK" name="TestTaskSeverotek" finished-at="2022-01-30T16:18:42 MSK" duration-ms="9570">
+    <test started-at="2022-01-30T18:29:30 MSK" name="TestTaskSeverotek" finished-at="2022-01-30T18:29:39 MSK" duration-ms="8475">
       <class name="tests.EndToEndTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EndToEndTest@68ba310d]" started-at="2022-01-30T16:18:33 MSK" name="setup" finished-at="2022-01-30T16:18:35 MSK" duration-ms="2517" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EndToEndTest@153f66e7]" started-at="2022-01-30T18:29:30 MSK" name="setup" finished-at="2022-01-30T18:29:33 MSK" duration-ms="2527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dashboardTitle()[pri:0, instance:tests.EndToEndTest@68ba310d]" started-at="2022-01-30T16:18:35 MSK" name="dashboardTitle" description="Проверка заголовка &#039;Панель упарвления&#039;" finished-at="2022-01-30T16:18:37 MSK" duration-ms="1983" status="PASS">
+        <test-method signature="dashboardTitle()[pri:0, instance:tests.EndToEndTest@153f66e7]" started-at="2022-01-30T18:29:33 MSK" name="dashboardTitle" description="Проверка заголовка &#039;Панель упарвления&#039;" finished-at="2022-01-30T18:29:34 MSK" duration-ms="1702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashboardTitle -->
-        <test-method signature="entryFormH1()[pri:0, instance:tests.EndToEndTest@68ba310d]" started-at="2022-01-30T16:18:37 MSK" name="entryFormH1" description="Проверка заголовка &#039;Добавить entry&#039;" finished-at="2022-01-30T16:18:38 MSK" depends-on-methods="tests.EndToEndTest.dashboardTitle" duration-ms="751" status="PASS">
+        <test-method signature="entryFormH1()[pri:0, instance:tests.EndToEndTest@153f66e7]" started-at="2022-01-30T18:29:34 MSK" name="entryFormH1" description="Проверка заголовка &#039;Добавить entry&#039;" finished-at="2022-01-30T18:29:35 MSK" depends-on-methods="tests.EndToEndTest.dashboardTitle" duration-ms="520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- entryFormH1 -->
-        <test-method signature="addNoteInBlog()[pri:0, instance:tests.EndToEndTest@68ba310d]" started-at="2022-01-30T16:18:38 MSK" name="addNoteInBlog" description="Cоздание и удаление записи в блоге" finished-at="2022-01-30T16:18:39 MSK" depends-on-methods="tests.EndToEndTest.entryFormH1" duration-ms="1356" status="PASS">
+        <test-method signature="addNoteInBlog()[pri:0, instance:tests.EndToEndTest@153f66e7]" started-at="2022-01-30T18:29:35 MSK" name="addNoteInBlog" description="Cоздание и удаление записи в блоге" finished-at="2022-01-30T18:29:36 MSK" depends-on-methods="tests.EndToEndTest.entryFormH1" duration-ms="1196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNoteInBlog -->
-        <test-method signature="blogTitle()[pri:0, instance:tests.EndToEndTest@68ba310d]" started-at="2022-01-30T16:18:39 MSK" name="blogTitle" description="Проверка удаления записи в блоге" finished-at="2022-01-30T16:18:41 MSK" depends-on-methods="tests.EndToEndTest.addNoteInBlog" duration-ms="2284" status="PASS">
+        <test-method signature="blogTitle()[pri:0, instance:tests.EndToEndTest@153f66e7]" started-at="2022-01-30T18:29:36 MSK" name="blogTitle" description="Проверка удаления записи в блоге" finished-at="2022-01-30T18:29:38 MSK" depends-on-methods="tests.EndToEndTest.addNoteInBlog" duration-ms="1828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blogTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndTest@68ba310d]" started-at="2022-01-30T16:18:41 MSK" name="tearDown" finished-at="2022-01-30T16:18:42 MSK" duration-ms="582" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndTest@153f66e7]" started-at="2022-01-30T18:29:38 MSK" name="tearDown" finished-at="2022-01-30T18:29:39 MSK" duration-ms="601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

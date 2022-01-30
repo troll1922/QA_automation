@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-BaseTest">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BaseTest" title="BaseTest" class="method navigator-link" hash-for-method="Test">Test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BaseTest" title="BaseTest" class="method navigator-link" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BaseTest" title="BaseTest" class="method navigator-link" hash-for-method="Test2">Test2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-BaseTest -->
@@ -127,9 +132,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test">
-                  </a> <!-- Test -->
-                  <span class="method-name">Test</span>
+                  <a name="Test1">
+                  </a> <!-- Test1 -->
+                  <span class="method-name">Test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test2">
+                  </a> <!-- Test2 -->
+                  <span class="method-name">Test2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +197,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test')
+data.setCell(0, 1, 'Test2')
 data.setCell(0, 2, 'BaseTest')
-data.setCell(0, 3, 9);
+data.setCell(0, 3, 4680);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Test1')
+data.setCell(1, 2, 'BaseTest')
+data.setCell(1, 3, 1);
 window.suiteTableData['BaseTest']= { tableData: data, tableDiv: 'times-div-BaseTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 ms</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-BaseTest">
               </div> <!-- times-div-BaseTest -->
             </div> <!-- times-div -->
@@ -221,9 +237,17 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">BaseTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Test</span>
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">Test1</span>
+                <span class="method-start">7826 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test2</span>
+                <span class="method-start">7829 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

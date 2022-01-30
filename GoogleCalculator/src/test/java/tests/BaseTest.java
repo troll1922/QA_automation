@@ -1,21 +1,27 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+package tests;
 
-import java.time.Duration;
+import Base.Common;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.*;
 
 public class BaseTest {
 
-    public String inputText;
-    public String result;
-    public WebDriver driver;
+    //public String inputText;
+    //public String result;
+    //public WebDriver driver;
 
+    @BeforeMethod
+    public void setup () {
+        Common.initDriver();
+        App.Actions.openCalc();
+    }
+
+    @Test
+    public void test1 () {
+
+    }
+
+/*
     @BeforeTest
     public void setup () throws InterruptedException {
         WebDriverManager.chromedriver().setup();
@@ -80,5 +86,11 @@ public class BaseTest {
 
         driver.close();
         driver.quit();
+    }
+
+ */
+    @AfterMethod(alwaysRun = true)
+    public void tearDown () {
+        Common.quit();
     }
 }
