@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="9.336" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="16.44" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -22,13 +22,13 @@
     <property name="jdk.debug" value="release"/>
     <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.1\plugins\maven\lib\maven3"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\ghQP"/>
+    <property name="user.home" value="C:\Users\Alex"/>
     <property name="user.language" value="ru"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2021-10-19"/>
     <property name="java.home" value="C:\Java\jdk-11.0.13"/>
     <property name="file.separator" value="\"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -36,7 +36,7 @@
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.13+10-LTS-370"/>
-    <property name="user.name" value="ghQP"/>
+    <property name="user.name" value="Alex"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -46,16 +46,16 @@
     <property name="java.vendor.version" value="18.9"/>
     <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.1\plugins\maven\lib\maven-event-listener.jar"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\ghQP\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\Alex\AppData\Local\Temp\"/>
     <property name="idea.version" value="2021.3.1"/>
     <property name="java.version" value="11.0.13"/>
-    <property name="user.dir" value="C:\_Git_Hub_\QA_automation\TestTaskSeverotek"/>
+    <property name="user.dir" value="C:\_GitHub_\QA_automation\TestTaskSeverotek"/>
     <property name="os.arch" value="amd64"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\_Git_Hub_\QA_automation\TestTaskSeverotek"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\_GitHub_\QA_automation\TestTaskSeverotek"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Java\jdk-11.0.13\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Java\jdk-11.0.13\bin;C:\Program Files\Git\cmd;C:\Users\ghQP\AppData\Local\Microsoft\WindowsApps;;C:\Users\ghQP\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.1\bin;;."/>
+    <property name="java.library.path" value="C:\Java\jdk-11.0.13\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Java\jdk-11.0.13\bin;C:\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin;C:\Users\Alex\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Alex\AppData\Local\Programs\Python\Python310\;C:\Users\Alex\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3\bin;;C:\Users\Alex\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.1\bin;;."/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vm.version" value="11.0.13+10-LTS-370"/>
@@ -63,8 +63,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="dashboardTitle" classname="tests.EndToEndTest" time="1.766"/>
-  <testcase name="entryFormH1" classname="tests.EndToEndTest" time="0.521"/>
-  <testcase name="addNoteInBlog" classname="tests.EndToEndTest" time="1.196"/>
-  <testcase name="blogTitle" classname="tests.EndToEndTest" time="1.829"/>
+  <testcase name="dashboardTitle" classname="tests.EndToEndTest" time="3.145"/>
+  <testcase name="entryFormH1" classname="tests.EndToEndTest" time="1.109"/>
+  <testcase name="addNoteInBlog" classname="tests.EndToEndTest" time="1.987"/>
+  <testcase name="blogTitle" classname="tests.EndToEndTest" time="3.078"/>
 </testsuite>

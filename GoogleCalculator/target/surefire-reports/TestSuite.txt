@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.71 s <<< FAILURE! - in TestSuite
+intExpression(tests.BaseTest)  Time elapsed: 0.041 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-LDE18F9', ip: '192.168.31.204', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, clickElement {id=4b8f0f40-abb4-4b36-922d-f8528b8f980b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Alex\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63709}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63709/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d0b32396d7244d319475a26e54168102)] -> css selector: [jsname='j93WEe']]
+	at tests.BaseTest.intExpression(BaseTest.java:19)
+

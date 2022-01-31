@@ -1,95 +1,37 @@
 package tests;
 
+import AppCalc.ActionsCalc;
 import Base.Common;
-import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class BaseTest {
 
-    //public String inputText;
-    //public String result;
-    //public WebDriver driver;
-
-    @BeforeMethod
+    @BeforeClass
     public void setup () {
         Common.initDriver();
-        App.Actions.openCalc();
+        //ActionsCalc.openCalc();
     }
 
-    @Test
-    public void test1 () {
-
+    @Test (description = "Проверка операций с целыми числами")
+    public void intExpression () {
+        ActionsCalc.openCalc();
+        ActionsCalc.builderExpression(DataExpression.intExpression.intExp);
+        Assert.assertTrue(ActionsCalc.getLineMemory().contains(DataExpression.intExpression.intExp));
+        Assert.assertEquals(ActionsCalc.getResult(), DataExpression.intExpression.resultIntExp);
+        Common.driver.quit();
     }
 
-/*
-    @BeforeTest
-    public void setup () throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
-        driver.get("https://www.google.ru/");
-        Actions action = new Actions(driver);
-        driver.findElement(By.name("q")).sendKeys("Калькулятор");
-        // кнопка поиск
-        driver.findElement(By.xpath("//input[@class='gNO89b']")).click();
-        // левая скобка
-        driver.findElement(By.cssSelector("[jsname='j93WEe']")).click();
-        // 1
-        driver.findElement(By.cssSelector("[jsname='N10B9']")).click();
-        // +
-        driver.findElement(By.cssSelector("[jsname='XSr6wc']")).click();
-        // 2
-        driver.findElement(By.cssSelector("[jsname='lVjWed']")).click();
-        // правая скобка
-        driver.findElement(By.cssSelector("[jsname='qCp9A']")).click();
-        // *
-        driver.findElement(By.cssSelector("[jsname='YovRWb']")).click();
-        // 3
-        driver.findElement(By.cssSelector("[jsname='KN1kY']")).click();
-        // -
-        driver.findElement(By.cssSelector("[jsname='pPHzQc']")).click();
-        // 4
-        driver.findElement(By.cssSelector("[jsname='xAP7E']")).click();
-        // 0
-        driver.findElement(By.cssSelector("[jsname='bkEvMb']")).click();
-        // делить
-        driver.findElement(By.cssSelector("[jsname='WxTTNd']")).click();
-        // 5
-        driver.findElement(By.cssSelector("[jsname='Ax5wH']")).click();
-        // =
-        driver.findElement(By.cssSelector("[jsname='Pt8tGc']")).click();
-
-        inputText = driver.findElement(By.cssSelector("[jsname='ubtiRe']")).getText();
-        result = driver.findElement(By.cssSelector("[jsname='VssY5c']")).getText();
-
-        Thread.sleep(3000);
-
+    @Test (description = "Проверка деления на ноль", dependsOnMethods = "intExpression")
+    public void DivideOnZero () {
+        Common.initDriver();
+        ActionsCalc.openCalc();
+        ActionsCalc.builderExpression(DataExpression.divideOnZero.zeroExp);
+        Assert.assertTrue(ActionsCalc.getLineMemory().contains(DataExpression.divideOnZero.zeroExp));
+        Assert.assertEquals(ActionsCalc.getResult(), DataExpression.divideOnZero.resultZeroExp);
     }
 
-    @Test
-    public void Test1 () {
-
-        System.out.println(inputText);
-        System.out.println(result);
-
-        Assert.assertEquals(inputText, "(1 + 2) × 3 - 40 ÷ 5 =");
-
-    }
-
-    @Test
-    public void Test2 () {
-
-        System.out.println(inputText);
-        System.out.println(result);
-
-        Assert.assertEquals(result, "1");
-
-        driver.close();
-        driver.quit();
-    }
-
- */
-    @AfterMethod(alwaysRun = true)
+    @AfterClass
     public void tearDown () {
         Common.quit();
     }

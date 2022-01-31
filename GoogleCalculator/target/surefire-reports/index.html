@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-BaseTest" class="navigator-link">
-              <span class="suite-name border-passed">BaseTest</span>
+            <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">All Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-BaseTest" class="navigator-link ">
-                    <span>[unset file name]</span>
+                  <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
+                    <span>C:\_GitHub_\QA_automation\GoogleCalculator\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="group-All_Test_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="times-All_Test_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="reporter-All_Test_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-All_Test_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-BaseTest" class="navigator-link ">
+                  <a href="#" panel-name="chronological-All_Test_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,26 +93,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.BaseTest" class="method navigator-link" hash-for-method="intExpression">intExpression</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-BaseTest" class="hide-methods passed suite-BaseTest"> (hide)</a> <!-- hide-methods passed suite-BaseTest -->
-                      <a href="#" panel-name="suite-BaseTest" class="show-methods passed suite-BaseTest"> (show)</a> <!-- show-methods passed suite-BaseTest -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-BaseTest">
+                    <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BaseTest" title="BaseTest" class="method navigator-link" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.BaseTest" class="method navigator-link" hash-for-method="DivideOnZero">DivideOnZero</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BaseTest" title="BaseTest" class="method navigator-link" hash-for-method="Test2">Test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-BaseTest -->
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,75 +132,106 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-BaseTest" class="panel BaseTest">
-          <div class="suite-BaseTest-class-passed">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">BaseTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.BaseTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test1">
-                  </a> <!-- Test1 -->
-                  <span class="method-name">Test1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test2">
-                  </a> <!-- Test2 -->
-                  <span class="method-name">Test2</span>
+                  <a name="intExpression">
+                  </a> <!-- intExpression -->
+                  <span class="method-name">intExpression</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-LDE18F9&apos;, ip: &apos;192.168.31.204&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, clickElement {id=4b8f0f40-abb4-4b36-922d-f8528b8f980b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Alex\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63709}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63709/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d0b32396d7244d319475a26e54168102)] -&gt; css selector: [jsname=&apos;j93WEe&apos;]]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at App.Actions.builderExpression(Actions.java:25)
+	at tests.BaseTest.intExpression(BaseTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Проверка операций с целыми числами)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-BaseTest-class-passed -->
-        </div> <!-- panel BaseTest -->
-        <div panel-name="test-xml-BaseTest" class="panel">
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.BaseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DivideOnZero">
+                  </a> <!-- DivideOnZero -->
+                  <span class="method-name">DivideOnZero</span>
+                  <em>
+(Проверка деления на ноль)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\_GitHub_\QA_automation\GoogleCalculator\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;BaseTest&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;GoogleCalculator&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;BaseTest&quot;/&gt;
+      &lt;class name=&quot;tests.BaseTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Command line test --&gt;
-&lt;/suite&gt; &lt;!-- BaseTest --&gt;
+  &lt;/test&gt; &lt;!-- GoogleCalculator --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-BaseTest" class="panel">
+        <div panel-name="testlist-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for BaseTest</span>
+            <span class="header-content">Tests for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (1 class)</span>
+                <span class="test-name">GoogleCalculator (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-BaseTest" class="panel">
+        <div panel-name="group-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for BaseTest</span>
+            <span class="header-content">Groups for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-BaseTest" class="panel">
+        <div panel-name="times-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for BaseTest</span>
+            <span class="header-content">Times for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_BaseTest');
-function tableData_BaseTest() {
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -199,56 +239,70 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test2')
-data.setCell(0, 2, 'BaseTest')
-data.setCell(0, 3, 4680);
+data.setCell(0, 1, 'DivideOnZero')
+data.setCell(0, 2, 'tests.BaseTest')
+data.setCell(0, 3, 774);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Test1')
-data.setCell(1, 2, 'BaseTest')
-data.setCell(1, 3, 1);
-window.suiteTableData['BaseTest']= { tableData: data, tableDiv: 'times-div-BaseTest'}
+data.setCell(1, 1, 'intExpression')
+data.setCell(1, 2, 'tests.BaseTest')
+data.setCell(1, 3, 15);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
-              <div id="times-div-BaseTest">
-              </div> <!-- times-div-BaseTest -->
+              <span class="suite-total-time">Total running time: 789 ms</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-BaseTest" class="panel">
+        <div panel-name="reporter-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for BaseTest</span>
+            <span class="header-content">Reporter output for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-BaseTest" class="panel">
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-BaseTest" class="panel">
+        <div panel-name="chronological-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">BaseTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="chronological-class-name">tests.BaseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Test1</span>
-                <span class="method-start">7826 ms</span>
+                <span class="method-name">DivideOnZero</span>
+                <span class="method-start">9512 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10318 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11467 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Test2</span>
-                <span class="method-start">7829 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">intExpression</span>
+                <span class="method-start">16698 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16738 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,1 +1,4 @@
-BaseTest.class
+tests\BaseTest.class
+tests\DataExpression.class
+tests\DataExpression$divideOnZero.class
+tests\DataExpression$intExpression.class

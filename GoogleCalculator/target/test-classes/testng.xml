@@ -3,6 +3,6 @@
 
 <suite name="All Test Suite">
     <test name="GoogleCalculator">
-        <classes/>
+            <classes><class name = "tests.BaseTest"/></classes>
     </test>
 </suite>
