@@ -17,8 +17,9 @@ public class ActionsCalc {
         Common.driver.findElement(By.xpath("//input[@class='gNO89b']")).click();
     }
 
-    public static void builderExpression (String exp) {
-        Map<String, WebElement> buttonsMap = ButtonsCalc.getButtonsMap();
+    public void builderExpression (String exp) {
+        ButtonsCalc getButtons = new ButtonsCalc();
+        Map<String, WebElement> buttonsMap = getButtons.getButtonsMap();
         Set<String> keys = buttonsMap.keySet();
         for (int i = 0; i < exp.length(); i++) {
             if (exp.charAt(i) != ' ') {
@@ -29,14 +30,14 @@ public class ActionsCalc {
                 }
             }
         }
-        ButtonsCalc.equals.click();
+        getButtons.equals.click();
     }
 
     public static String getResult () {
-        return ButtonsCalc.result.getText();
+        return new ButtonsCalc().result.getText();
     }
 
     public static String getLineMemory () {
-        return ButtonsCalc.lineMemory.getText();
+        return new ButtonsCalc().lineMemory.getText();
     }
 }

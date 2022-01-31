@@ -7,31 +7,34 @@ import org.testng.annotations.*;
 
 public class BaseTest {
 
-    @BeforeClass
+    @BeforeMethod
     public void setup () {
         Common.initDriver();
-        //ActionsCalc.openCalc();
+        ActionsCalc.openCalc();
     }
 
     @Test (description = "Проверка операций с целыми числами")
     public void intExpression () {
-        ActionsCalc.openCalc();
-        ActionsCalc.builderExpression(DataExpression.intExpression.intExp);
+        new ActionsCalc().builderExpression(DataExpression.intExpression.intExp);
         Assert.assertTrue(ActionsCalc.getLineMemory().contains(DataExpression.intExpression.intExp));
         Assert.assertEquals(ActionsCalc.getResult(), DataExpression.intExpression.resultIntExp);
-        Common.driver.quit();
     }
 
     @Test (description = "Проверка деления на ноль", dependsOnMethods = "intExpression")
-    public void DivideOnZero () {
-        Common.initDriver();
-        ActionsCalc.openCalc();
-        ActionsCalc.builderExpression(DataExpression.divideOnZero.zeroExp);
+    public void divideOnZero () {
+        new ActionsCalc().builderExpression(DataExpression.divideOnZero.zeroExp);
         Assert.assertTrue(ActionsCalc.getLineMemory().contains(DataExpression.divideOnZero.zeroExp));
         Assert.assertEquals(ActionsCalc.getResult(), DataExpression.divideOnZero.resultZeroExp);
     }
 
-    @AfterClass
+    @Test (description = "Проверка ошибки при отсутствии значения", dependsOnMethods = "divideOnZero")
+    public void sinVoidError () {
+        new ActionsCalc().builderExpression(DataExpression.sinVoidError.sinExp);
+        Assert.assertTrue(ActionsCalc.getLineMemory().contains(DataExpression.sinVoidError.lineMemorySin));
+        Assert.assertEquals(ActionsCalc.getResult(), DataExpression.sinVoidError.resultSinVoidError);
+    }
+
+    @AfterMethod
     public void tearDown () {
         Common.quit();
     }

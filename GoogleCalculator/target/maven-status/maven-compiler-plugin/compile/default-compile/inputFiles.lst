@@ -1,5 +1,5 @@
-C:\_GitHub_\QA_automation\GoogleCalculator\src\main\java\App\ButtonsCalc.java
-C:\_GitHub_\QA_automation\GoogleCalculator\src\main\java\Base\Config.java
-C:\_GitHub_\QA_automation\GoogleCalculator\src\main\java\Base\Constants.java
-C:\_GitHub_\QA_automation\GoogleCalculator\src\main\java\Base\Common.java
-C:\_GitHub_\QA_automation\GoogleCalculator\src\main\java\App\Actions.java
+C:\_Git_Hub_\QA_automation\GoogleCalculator\src\main\java\Base\Common.java
+C:\_Git_Hub_\QA_automation\GoogleCalculator\src\main\java\Base\Constants.java
+C:\_Git_Hub_\QA_automation\GoogleCalculator\src\main\java\AppCalc\ActionsCalc.java
+C:\_Git_Hub_\QA_automation\GoogleCalculator\src\main\java\AppCalc\ButtonsCalc.java
+C:\_Git_Hub_\QA_automation\GoogleCalculator\src\main\java\Base\Config.java

@@ -9,42 +9,43 @@ import java.util.Map;
 
 public class ButtonsCalc {
        // 0
-       public static WebElement zero = Common.driver.findElement(By.cssSelector("[jsname='bkEvMb']"));
+       private final WebElement zero = Common.driver.findElement(By.cssSelector("[jsname='bkEvMb']"));
        // 1
-       public static WebElement one = Common.driver.findElement(By.cssSelector("[jsname='N10B9']"));
+       private final WebElement one = Common.driver.findElement(By.cssSelector("[jsname='N10B9']"));
        // 2
-       public static WebElement two = Common.driver.findElement(By.cssSelector("[jsname='lVjWed']"));
+       private final WebElement two = Common.driver.findElement(By.cssSelector("[jsname='lVjWed']"));
        // 3
-       public static WebElement three = Common.driver.findElement(By.cssSelector("[jsname='KN1kY']"));
+       private final WebElement three = Common.driver.findElement(By.cssSelector("[jsname='KN1kY']"));
        // 4
-       public static WebElement four = Common.driver.findElement(By.cssSelector("[jsname='xAP7E']"));
+       private final WebElement four = Common.driver.findElement(By.cssSelector("[jsname='xAP7E']"));
        // 5
-       public static WebElement five = Common.driver.findElement(By.cssSelector("[jsname='Ax5wH']"));
+       private final WebElement five = Common.driver.findElement(By.cssSelector("[jsname='Ax5wH']"));
        // 6
-       public static WebElement six = Common.driver.findElement(By.cssSelector("[jsname='abcgof']"));
+       private final WebElement six = Common.driver.findElement(By.cssSelector("[jsname='abcgof']"));
        // левая скобка
-       public static WebElement leftBracket = Common.driver.findElement(By.cssSelector("[jsname='j93WEe']"));
+       private final WebElement leftBracket = Common.driver.findElement(By.cssSelector("[jsname='j93WEe']"));
        // правая скобка
-       public static WebElement rightBracket = Common.driver.findElement(By.cssSelector("[jsname='qCp9A']"));
+       private final WebElement rightBracket = Common.driver.findElement(By.cssSelector("[jsname='qCp9A']"));
        // +
-       public static WebElement plus = Common.driver.findElement(By.cssSelector("[jsname='XSr6wc']"));
+       private final WebElement plus = Common.driver.findElement(By.cssSelector("[jsname='XSr6wc']"));
        // -
-       public static WebElement minus = Common.driver.findElement(By.cssSelector("[jsname='pPHzQc']"));
+       private final WebElement minus = Common.driver.findElement(By.cssSelector("[jsname='pPHzQc']"));
        // ×
-       public static WebElement multiply = Common.driver.findElement(By.cssSelector("[jsname='YovRWb']"));
+       private final WebElement multiply = Common.driver.findElement(By.cssSelector("[jsname='YovRWb']"));
        // ÷
-       public static WebElement divide = Common.driver.findElement(By.cssSelector("[jsname='WxTTNd']"));
+       private final WebElement divide = Common.driver.findElement(By.cssSelector("[jsname='WxTTNd']"));
+       // sin
+       private final WebElement sin = Common.driver.findElement(By.cssSelector("[jsname='aN1RFf']"));
        // =
-       public static WebElement equals = Common.driver.findElement(By.cssSelector("[jsname='Pt8tGc']"));
+       public final WebElement equals = Common.driver.findElement(By.cssSelector("[jsname='Pt8tGc']"));
        // результат
-       public static WebElement result = Common.driver.findElement(By.cssSelector("[jsname='VssY5c']"));
+       public final WebElement result = Common.driver.findElement(By.cssSelector("[jsname='VssY5c']"));
        // строка памяти
-       public static WebElement lineMemory = Common.driver.findElement(By.cssSelector("[jsname='ubtiRe']"));
+       public final WebElement lineMemory = Common.driver.findElement(By.cssSelector("[jsname='ubtiRe']"));
 
-       public static Map <String, WebElement> buttonsMap = new HashMap<>();
+       public final Map <String, WebElement> buttonsMap = new HashMap<>();
 
-       public static Map <String, WebElement> getButtonsMap () {
-              //Map <String, WebElement> buttonsMap = new HashMap<>();
+       public Map <String, WebElement> getButtonsMap () {
               buttonsMap.put("0", zero);
               buttonsMap.put("1", one);
               buttonsMap.put("2", two);
@@ -58,6 +59,7 @@ public class ButtonsCalc {
               buttonsMap.put("-", minus);
               buttonsMap.put("×", multiply);
               buttonsMap.put("÷", divide);
+              buttonsMap.put("s", sin);
               return buttonsMap;
        }
 }

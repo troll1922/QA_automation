@@ -1,5 +1,5 @@
 Base\Config.class
-App\ButtonsCalc.class
+AppCalc\ButtonsCalc.class
 Base\Common.class
+AppCalc\ActionsCalc.class
 Base\Constants.class
-App\Actions.class
